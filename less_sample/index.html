@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Оформление заказа</title>
+	<link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+	<header class="b-header">
+		<h1 class="b-header__company">ООО «Рога и копыта»</h1>
+		<menu class="b-menu b-menu-top">
+			<li class="b-menu__item"><a href="#" class="b-menu__link">Каталог</a></li>
+			<li class="b-menu__item"><a href="#" class="b-menu__link">Категории</a></li>
+			<li class="b-menu__item"><a href="#" class="b-menu__link">Бизнес</a></li>
+			<li class="b-menu__item"><a href="#" class="b-menu__link">Рога</a></li>
+			<li class="b-menu__item"><a href="#" class="b-menu__link">Копыта</a></li>
+		</menu>
+	</header>
+	<section class="b-content">
+		<menu class="b-menu-order">
+			<li class="b-menu__item"><a href="#" class="b-menu__link">Корзина</a></li>
+			<li class="b-menu__item">&rarr;</li>
+			<li class="b-menu__item b-menu-order__current">Оформление заказа</li>
+			<li class="b-menu__item">&rarr;</li>
+			<li class="b-menu__item">Финиш</li>
+		</menu>
+		<form action="" class="b-form" method="post">
+			<table class="b-form__table">
+				<tr>
+					<td></td>
+					<td class="b-form__table_caption">Оформление заказа</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Имя
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<input type="text" name="name" class="b-form__input_text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Телефон
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<input type="text" name="phone" class="b-form__input_text">
+					</td>
+				</tr>
+				<tr>
+					<td class="b-form__table_clear" colspan="2"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="b-form__table_caption">Доставка</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Страна
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<select name="country" class="b-form__select">
+							<option value="1">Россия</option>
+							<option value="2">Украина</option>
+							<option value="3">Белоруссия</option>
+							<option value="4">Казахстан</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Индекс
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<input type="text" name="postcode" class="b-form__input_text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Нас. пункт
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<input type="text" name="city" class="b-form__input_text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Адрес
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<input type="text" name="address" class="b-form__input_text">
+					</td>
+				</tr>
+				<tr>
+					<td class="b-form__table_clear" colspan="2"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="b-form__table_caption">Быстрая регистрация</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						Почта
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<div class="b-form__input_text">
+							<input type="text" name="email" class="b-email">
+							<label class="b-form__checkbox b-subscribe">
+								<input type="checkbox" name="subscribe" checked>
+								получать рассылку
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="b-form__table_title">
+						<span>Пароль два раза</span>
+						</div>
+					</td>
+					<td class="b-form__table_container">
+						<input type="text" name="password_1" class="b-form__input_text">
+						<input type="text" name="password_2" class="b-form__input_text">
+					</td>
+				</tr>
+				<tr>
+					<td class="b-form__table_clear" colspan="2"></td>
+				</tr>
+				<tr class="b-form__table_result">
+					<td></td>
+					<td>
+						<input type="submit" class="b-form__submit" value="Оформить">
+						<span class="b-form__submit_require">Все поля обязательны</span>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<footer class="b-footer"></footer>
+</body>
+</html>

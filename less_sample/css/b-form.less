@@ -1,0 +1,88 @@
+@input-width:300px;
+@line-height:@font-size * 2 + 1;
+
+.b-form {
+	display:inline-block;
+
+	&__table {
+		border-collapse:collapse;
+		border:0;
+
+		td {
+			padding:10px;
+			vertical-align:middle;
+			text-align:left;
+		}
+	}
+
+	&__table_clear {
+		height:10px;
+	}
+	&__table_title {
+		font-size:@font-size;
+		width:70px;
+		line-height:@line-height;
+	}
+
+	&__table_caption {
+		font-size:@font-size * 1.2;
+	}
+
+	&__input_text {
+		font-family:@font-family;
+		font-size:@font-size;
+		width:@input-width;
+		display:block;
+		border:1px solid #ccc;
+		height:@line-height - 4;
+		padding:1px 5px;
+	}
+
+	&__select {
+		font-family:@font-family;
+		font-size:@font-size;
+		width:@input-width + 12;
+	}
+
+	&__checkbox {
+		cursor:pointer;
+		font-family:@font-family;
+		font-size:@font-size;
+		line-height:@line-height;
+	}
+
+	&__submit {
+		padding:10px 20px;
+		font-family:@font-family;
+		font-size:@font-size;
+		background:url('../img/b-form__submit.png') repeat #fff;
+		border:1px solid #ddd;
+		.border-radius;
+	}
+	&__submit_require {
+		margin:0 0 0 15px;
+	}
+
+	&__table_result {
+		background:#f9f5e4;
+
+		td {
+			padding:30px 10px;
+		}
+	}
+}
+
+.b-subscribe {
+	line-height:@line-height - 2;
+}
+
+.b-email {
+	width:145px;
+	border:0;
+	padding:0;
+	margin:0;
+	font-size:@font-size;
+	height:@line-height - 8;
+}
+
+

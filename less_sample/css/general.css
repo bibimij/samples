@@ -1,0 +1,121 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.b-header {
+  margin: 0 0 30px;
+}
+.b-header__company {
+  font-size: 28px;
+  padding: 30px;
+  margin: 0;
+  float: left;
+}
+.b-menu,
+.b-menu-order {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+.b-menu__item {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.b-menu__current {
+  background: #eee;
+}
+.b-menu-top {
+  line-height: 70px;
+}
+.b-menu-order {
+  text-align: center;
+  margin: 0 0 30px;
+}
+.b-menu-order__current {
+  background: #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.b-content {
+  text-align: center;
+  min-height: 100%;
+}
+.b-form {
+  display: inline-block;
+}
+.b-form__table {
+  border-collapse: collapse;
+  border: 0;
+}
+.b-form__table td {
+  padding: 10px;
+  vertical-align: middle;
+  text-align: left;
+}
+.b-form__table_clear {
+  height: 10px;
+}
+.b-form__table_title {
+  font-size: 14px;
+  width: 70px;
+  line-height: 29px;
+}
+.b-form__table_caption {
+  font-size: 16.8px;
+}
+.b-form__input_text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  width: 300px;
+  display: block;
+  border: 1px solid #ccc;
+  height: 25px;
+  padding: 1px 5px;
+}
+.b-form__select {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  width: 312px;
+}
+.b-form__checkbox {
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 29px;
+}
+.b-form__submit {
+  padding: 10px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: url('../img/b-form__submit.png') repeat #ffffff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.b-form__submit_require {
+  margin: 0 0 0 15px;
+}
+.b-form__table_result {
+  background: #f9f5e4;
+}
+.b-form__table_result td {
+  padding: 30px 10px;
+}
+.b-subscribe {
+  line-height: 27px;
+}
+.b-email {
+  width: 145px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  height: 21px;
+}
+.b-footer {
+  height: 100px;
+}
