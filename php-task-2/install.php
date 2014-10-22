@@ -53,7 +53,7 @@ if ($_POST)
 
         file_put_contents('config.php', '<?php'."\n\n".'return '.var_export($_POST, TRUE).';');
 
-        // @unlink('install.php');
+        @unlink('install.php');
 
         $finish = TRUE;
     }

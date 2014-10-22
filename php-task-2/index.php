@@ -139,30 +139,28 @@ if ( ! empty($_POST))
                 `fill_t`       = '.$fill_t
         );
 
-var_dump($r);
+        require_once 'Mail.php';
 
-        // require_once 'Mail.php';
-// 
-        // $mail_headers = array('From' => $from, 'To' => $config['smtp']['admin'], 'Subject' => 'Новая запись');
-// 
-        // $mail_body = 
-            // 'Имя: '.$_POST['first_name']."\n".
-            // 'Отчество: '.$_POST['middle_name']."\n".
-            // 'Фамилия: '.$_POST['last_name']."\n".
-            // 'Дата рождения: '.$_POST['birth_d']."\n".
-            // 'Телефон: '.$_POST['phone']."\n".
-            // 'Электронная почта: '.$_POST['email']."\n".
-            // 'Паспорт: '.$_POST['passport_id']."\n".
-            // 'Кем выдан: '.$_POST['issued_by']."\n".
-            // 'Дата выдачи: '.$_POST['issued_d']."\n".
-            // 'Код подразделения: '.$_POST['issued_code']."\n".
-            // 'Место рождения: '.$_POST['birth_place']."\n".
-            // 'Согласен: '.($_POST['confirmed'] ? 'Да' : 'Нет')."\n".
-            // 'Время заполнения: '.$fill_t;
-// 
-        // $smtp = Mail::factory('smtp', array('host' => $config['smtp']['host'], 'port' => $config['smtp']['port'], 'auth' => TRUE, 'username' => $config['smtp']['username'], 'password' => $config['smtp']['password']));
-        // 
-        // $smtp->send($config['smtp']['admin'], $mail_headers, $mail_body);
+        $mail_headers = array('From' => $from, 'To' => $config['smtp']['admin'], 'Subject' => 'Новая запись');
+
+        $mail_body = 
+            'Имя: '.$_POST['first_name']."\n".
+            'Отчество: '.$_POST['middle_name']."\n".
+            'Фамилия: '.$_POST['last_name']."\n".
+            'Дата рождения: '.$_POST['birth_d']."\n".
+            'Телефон: '.$_POST['phone']."\n".
+            'Электронная почта: '.$_POST['email']."\n".
+            'Паспорт: '.$_POST['passport_id']."\n".
+            'Кем выдан: '.$_POST['issued_by']."\n".
+            'Дата выдачи: '.$_POST['issued_d']."\n".
+            'Код подразделения: '.$_POST['issued_code']."\n".
+            'Место рождения: '.$_POST['birth_place']."\n".
+            'Согласен: '.($_POST['confirmed'] ? 'Да' : 'Нет')."\n".
+            'Время заполнения: '.$fill_t;
+
+        $smtp = Mail::factory('smtp', array('host' => $config['smtp']['host'], 'port' => $config['smtp']['port'], 'auth' => TRUE, 'username' => $config['smtp']['username'], 'password' => $config['smtp']['password']));
+        
+        $smtp->send($config['smtp']['admin'], $mail_headers, $mail_body);
 
         unset($_SESSION['fill_t']);
 
