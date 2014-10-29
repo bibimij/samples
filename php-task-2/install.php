@@ -25,7 +25,10 @@ $db_error = '';
 
 if ($_POST)
 {
-    $_POST = array_replace_recursive($defaults, $_POST);
+    foreach ($defaults as $key => $value)
+    {
+        $_POST[$key] = array_merge($value, $_POST[$key]);
+    }
     
     $mysqli = new mysqli($_POST['db']['host'], $_POST['db']['login'], $_POST['db']['password'], $_POST['db']['db']);
 
@@ -109,6 +112,7 @@ else
         <tr>
             <td colspan="2">
                 <h1>Параметры SMTP</h1>
+                <h4>Необходимо установить PEAR-пакет <a href="http://pear.php.net/package/Mail">Mail</a></h4>
             </td>
         </tr>
         <tr>
